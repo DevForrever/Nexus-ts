@@ -1,0 +1,46 @@
+.title {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.text {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.formBox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    gap: 20px;
+}
+.input {
+    width: 286px;
+    height: 40px;
+    border-color: white;
+    color: white;
+    border-radius: 8px;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 8px;
+    margin-bottom: 50px;
+}
+.input::placeholder {
+    font-weight: normal;
+}
+.button {
+    font-size: 16px;
+    font-weight: bold;
+    width: 160px;
+    height: 46px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: #292929;
+}
+.pokemonBox {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}

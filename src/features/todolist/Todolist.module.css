@@ -1,0 +1,134 @@
+.section {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+}
+.ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 700px;
+    align-self: flex-start;
+}
+.title {
+    color: white;
+    text-align: center;
+}
+.input {
+    width: 286px;
+    height: 40px;
+    border-color: white;
+    color: white;
+    border-radius: 8px;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 8px;
+}
+.label {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+.inputBox {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    list-style: none;
+    max-width: 300px;
+}
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: max-content;
+}
+.checkBox {
+    margin-right: 20px;
+}
+.todobox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.input::placeholder {
+    font-weight: normal;
+}
+.button {
+    font-size: 16px;
+    font-weight: bold;
+    width: 160px;
+    height: 46px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: #292929;
+}
+.deleteButton {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+    width: 160px;
+    height: 46px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: #292929;
+}
+.modalButton {
+    font-size: 16px;
+    font-weight: bold;
+    width: 300px;
+    height: 46px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: #292929;
+}
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+.card {
+    padding: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.08);
+    background: rgba(0, 0, 0, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.closeModal {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 29px;
+    background: rgba(229, 229, 229, 1);
+    border: 1px solid rgba(229, 229, 229, 1);
+    right: 17px;
+    top: 17px;
+    position: absolute;
+    transition: 0.25s;
+}
+.closeModal:hover {
+    transform: scale(1.175);
+}

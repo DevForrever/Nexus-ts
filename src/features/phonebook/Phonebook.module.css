@@ -1,0 +1,90 @@
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+}
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contacts {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.contactButton {
+    font-size: 16px;
+    font-weight: bold;
+    width: 240px;
+    height: 46px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: #292929;
+    margin-top: 10px;
+}
+
+.list__item {
+    color: white;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    display: grid;
+    grid-template-columns: 220px 160px;
+    align-items: center;
+    column-gap: 20px;
+}
+.contacts__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 100px;
+}
+.input {
+    width: 228px;
+    height: 40px;
+    border-color: white;
+    color: white;
+    border-radius: 8px;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+.inputSearch {
+    width: 286px;
+    height: 40px;
+    border-color: white;
+    color: white;
+    border-radius: 8px;
+    background: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 8px;
+    margin-bottom: 50px;
+}
+.inputSearch::placeholder {
+    font-weight: normal;
+}
+.button {
+    font-size: 16px;
+    font-weight: bold;
+    width: 160px;
+    height: 46px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: #292929;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.label {
+    font-weight: bold;
+    font-size: 18px;
+}
