@@ -4,7 +4,7 @@ import { getContacts, deleteContact, addContact } from './api'
 
 export function usePhonebookQuery() {
     const { data } = useQuery({ queryKey: ['contacts'], queryFn: getContacts })
-    const { invalidate } = useInvalidate()
+    const invalidate = useInvalidate()
     const onSuccess = () => invalidate(['contacts'])
 
     const { mutate: mutateDeleteContact } = useMutation({

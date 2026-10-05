@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Modal } from './Modal'
 import s from './Todolist.module.css'
 
-interface Todo {
+type Todo = {
     id: string
     completed: boolean
     text: string

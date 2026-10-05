@@ -10,12 +10,12 @@ const clearAuthHeader = () => {
     api.defaults.headers.common.Authorization = ''
 }
 
-interface Register {
+type Register = {
     name: string
     email: string
     password: string
 }
-interface Login {
+type Login = {
     email: string
     password: string
 }

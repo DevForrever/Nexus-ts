@@ -2,13 +2,14 @@ import axios from 'axios'
 
 const api = axios.create({ baseURL: 'https://6a0f3fac1736097c360b66bb.mockapi.io/' })
 
-export interface Contact {
+export type Contact = {
     name: string
     number: string
     id: string
 }
 
 type AddContact = Omit<Contact, 'id'>
+
 
 export const getContacts = async (): Promise<Contact[]> => {
     const { data } = await api.get<Contact[]>('contacts')

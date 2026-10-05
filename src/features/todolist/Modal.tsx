@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import close from '../../assets/close.svg'
-import s from './TodoList.module.css'
+import s from './Todolist.module.css'
 
-interface Props {
+type Props= {
     addTodo: (text: string) => void
     toggleModal: () => void
 }

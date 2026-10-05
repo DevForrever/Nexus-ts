@@ -1,17 +1,17 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
-interface User {
+type User = {
     name: string
     email: string
 }
 
-interface Data {
+type Data = {
     user: User
     token: string
 }
 
-interface AuthStore {
+type AuthStore = {
     user: User | null
     token: string | null
     isLoggedIn: boolean
