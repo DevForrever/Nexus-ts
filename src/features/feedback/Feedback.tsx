@@ -21,7 +21,7 @@ export function Feedback() {
             <h2 className={s.title}>Please leave feedback</h2>
             <div className={s.buttonBox}>
                 {options.map(({ ui, value }) => (
-                    <button className={s.button} key={value} onClick={() => increment(value)}>
+                    <button type='button' className={s.button} key={value} onClick={() => increment(value)}>
                         {ui}
                     </button>
                 ))}
